@@ -3,11 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Calculadora"
              x:Class="Calculadora.MainPage">
-    
-    <StackLayout> <Label BackgroundColor="AntiqueWhite"> </Label> </StackLayout>
-    
+  
     <Grid x:Name="Grilla"
-          BackgroundColor="Aqua"
           VerticalOptions="End">
 
         <Grid.RowDefinitions>
@@ -25,7 +22,8 @@
                 <ColumnDefinition />
                 <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        
+
+            <Button Text="0" Grid.RowSpan="4" Grid.Column="0" />
             <Button Text="C" Grid.Row="0" Grid.Column="0" />
             <Button Text="+/-" Grid.Row="0" Grid.Column="1" />
             <Button Text="%" Grid.Row="0" Grid.Column="2" />
@@ -50,6 +48,5 @@
             <Button Text="00" Grid.Row="4" Grid.Column="1"  />
             <Button Text="." Grid.Row="4" Grid.Column="2"  />
             <Button Text="=" Grid.Row="4" Grid.Column="3" BackgroundColor="Black" />
-
     </Grid>
 </ContentPage>

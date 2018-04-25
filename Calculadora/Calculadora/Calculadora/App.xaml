@@ -4,10 +4,9 @@
              x:Class="Calculadora.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Style TargetType="BorderColor">
-                <Setter>
-                    Color "yelow"
-                </Setter>
+            <Style TargetType="Button">
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
